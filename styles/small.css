@@ -185,7 +185,7 @@ nav li.active a{
  }
 
  /**Sign up Section tag**/
- .sign-up label{
+ .signup label{
     font-size: 1rem;
     font-weight: 600;
     color: var(color--mygrey-50);
@@ -201,7 +201,7 @@ nav li.active a{
     border-radius: 4px;
  }
 
- .sign-up input[type="submit"]{
+ .signup input[type="submit"]{
     background-color: var(--color-secondary);
     color: var(--color-mygrey-05);
     font-weight: 600;
