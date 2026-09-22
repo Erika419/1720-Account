@@ -17,15 +17,34 @@ if(myaccount === null){
     display.classList.add("hide");
 } else{
     signup.classList.add("hide");
-    signup.classList.remove("hide")
+    signup.classList.remove("hide");
+
+    //Display Values from Local Storage
+    details.innerHTML = `
+    <h3>Null Name</h3><p>${localStorage.getItem("ly-Name")}</p>
+    <h3>Email Name</h3><p>${localStorage.getItem("ly-Email")}</p>
+    <h3>Phone Number</h3><p>${localStorage.getItem("ly-Phone")}</p>
+    `
 }
 
 //Funtion to create a new profile
 function createProfile(){
-    console.log("You created a new Profile")
+    const name = document.querySelector("#name");
+    const email = document.querySelector("#email");
+    const phone = document.querySelector("#phone");
+
+    if (name.value && email.value && phone.value){
+    localStorage.setItem("ly-Name", name.value);
+    localStorage.setItem("ly-Name", email.value);
+    localStorage.setItem("ly-Name", phone.value);
+    }
+
 }
 
 //Funtion to delete a new profile
 function deleteProfile(){
-    console.log("You DELETED a Profile")
+    localStorage.removeItem("ly-Name");
+    localStorage.removeItem("ly-Name");
+    localStorage.removeItem("ly-Name");
+    window.location.reload();
 }
