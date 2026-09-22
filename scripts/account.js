@@ -14,5 +14,6 @@ if(myaccount === null){
     signup.classList.remove("hide");
     display.classList.add("hide");
 } else{
-
+    signup.classList.add("hide");
+    signup.classList.remove("hide")
 }
