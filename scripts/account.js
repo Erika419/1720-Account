@@ -3,9 +3,9 @@ const signup = document.querySelector("#signup");
 const submitBtn = document.querySelector("#signup input[type=submit]");
 
 //Grab references to the delete local storage
-const display = document.querySelector("display");
+const display = document.querySelector("#display");
 const details = document.querySelector("#display div");
-const deleteBtn = document.querySelector("#display>button"); 
+const deleteBtn = document.querySelector("#display > button"); 
 
 //Check if local data storage already exists
 const myaccount = localStorage.getItem("ly-Name");
