@@ -65,6 +65,15 @@ header span{
     height: 30px;
 }
 
+
+/**Dark Mode Styles tag**/
+.dark{
+    background-color: var(--color-mygrey-95);
+}
+
+.dark h1{
+    color: var(--color-mygrey-05);
+}
 /**navigation tag**/
 nav{ 
     display: none;
@@ -126,7 +135,7 @@ nav li.active a{
 /**main stuff tag**/
     h1{ 
         font-size:1.5rem;
-        color: var(--color-primary);
+        color: var(--color-mygrey-90);
         font-weight:500;
         margin-left:10px;
     }
