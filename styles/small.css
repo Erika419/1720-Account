@@ -98,7 +98,7 @@ nav a{
 }
 
 nav a:hover{
-    background-color: rgb(180, 58, 180);
+    background-color: rgb(242, 124, 242);
 }
 
 nav li:last-child a{
@@ -110,7 +110,7 @@ nav.show{
 }
 
 nav li.active a{
-    background-color: var(--color-mygrey-40);
+    background-color: var(--color-mygrey-20);
 }
 
 /**Hamburger Stuff tag**/
