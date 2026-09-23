@@ -5,6 +5,10 @@
         margin: 0 auto;
     }
 
+    header{
+    grid-template-columns: 24px auto 44px;
+    }
+
        /**Navigation Stuff tag**/
     nav{
         display: block;

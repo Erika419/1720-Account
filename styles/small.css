@@ -1,7 +1,7 @@
 /**Cholor Scheme**/
 :root{
-    --color-primary: #bc0ec8;
-    --color-secondary: #2c008b;
+    --color-primary: #cc33aa;
+    --color-secondary: #5577aa;
     /**series of gray**/
     --color-mygrey-05:lab(98% 0 0);
     --color-mygrey-10:lab(97% 0 0);
@@ -35,7 +35,7 @@ header{
     display: grid;
     align-items: end;
     column-gap: 8px;
-    grid-template-columns: 24px auto 44px;
+    grid-template-columns: 24px auto 44px 44px;
 }
 
 header img{
@@ -46,7 +46,23 @@ header img{
 }
 
 header span{
-    color: #232323;
+    color: var(--color-secondary);
+}
+
+/**Dark Mode Button tag**/
+.darkbtn{
+    border:none;
+    background: none;
+    width:44px;
+    height:44px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.darkbtn img{
+    width: 30px;
+    height: 30px;
 }
 
 /**navigation tag**/
@@ -91,7 +107,7 @@ nav li.active a{
 .hamburger{
     background: none;
     border:none;
-    color:#232323;
+    color:var(--color-secondary);
     cursor: pointer;
     font-size: 2rem;
     font-family: Verdana;
@@ -110,7 +126,7 @@ nav li.active a{
 /**main stuff tag**/
     h1{ 
         font-size:1.5rem;
-        color: var(--color-mygrey-80);
+        color: var(--color-primary);
         font-weight:500;
         margin-left:10px;
     }
